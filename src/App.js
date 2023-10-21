@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Content from "./component/Content";
+import Title from "./component/Title";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+    <Title 작명='뉴스' 서브='뉴스타이틀'/>
+    <Content/>
+    <Title 작명='인기순위'서브='인기타이틀'/>
+   </>
   );
 }
 
